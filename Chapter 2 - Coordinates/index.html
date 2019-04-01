@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Coordinates</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<style>
+	body
+	{
+		background-image:url("background.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	</style>
+	</head>
+		<body>
+		<h1>Canvas Coordinates</h1>
+		<p>The HTML canvas is a two-dimensional grid.</p>
+		<p>The upper-left corner of the canvas has the coordinates (0,0)</p>
+		<p>In the previous chapter, you saw this method used: fillRect(0,0,150,75).</p>
+		<p>This means: Start at the upper-left corner (0,0) and draw a 150x75 pixels rectangle.</p>
+		<h1>Draw a Line</h1>
+		<p>To draw a straight line on a canvas, use the following methods:</p>
+		<ul>
+			<li>moveTo(x,y) - defines the starting point of the line</li>
+			<li>lineTo(x,y) - defines the ending point of the line</li>
+		</ul>
+		<p>To actually draw the line, you must use one of the "ink" methods, like stroke().</p>
+		<canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">Your browser does not support the canvas element.</canvas>
+		<h1>Draw a Circle</h1>
+		<p>To draw a circle on a canvas, use the following methods:</p>
+		<ul>
+			<li>beginPath() - begins a path</li>
+			<li>arc(x,y,r,startangle,endangle) - creates an arc/curve. To create a circle with arc(): Set start angle to 0 and
+			end angle to 2*Math.PI. The x and y parameters define the x- and y-coordinates of the center of the circle.
+			The r parameter defines the radius of the circle. </li>
+		</ul>
+		<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">Your browser does not support the canvas element.</canvas>
+		<script src="script.js" type="text/javascript"></script>
+		</body>
+</html>
+	

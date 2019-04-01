@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Text</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<style>
+	body
+	{
+		background-image:url("background.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	</style>
+	</head>
+		<body>
+		<h1>Drawing Text on the Canvas</h1>
+		<p>To draw text on a canvas, the most important property and methods are:</p>
+		<ul>
+			<li>font - defines the font properties for the text</li>
+			<li>fillText(text,x,y) - draws "filled" text on the canvas</li>
+			<li>strokeText(text,x,y) - draws text on the canvas (no fill)</li>
+		</ul>
+		<h1>Using fillText()</h1>
+		<p>Set font to 30px "Arial" and write a filled text on the canvas:</p>
+		<canvas id="myCanvas1" height="100px" width="200px" style="border:1px solid #d3d3d3;">Your browser does not support the canvas element.</canvas>
+		<h1>Using strokeText()</h1>
+		<p>Set font to 30px "Arial" and write a text, with no fill, on the canvas:</p>
+		<canvas id="myCanvas2" height="100px" width="200px" style="border:1px solid #d3d3d3;">Your browser does not support the canvas element.</canvas>
+		<h1>Add Color and Center Text</h1>
+		<p>Set font to 30px "Comic Sans MS" and write a filled red text in the center of the canvas:</p>
+		<canvas id="myCanvas3" height="200px" width="300px" style="border:1px solid #d3d3d3;">Your browser does not support the canvas element.</canvas>
+		<script src="script.js" type="text/javascript"></script>
+		</body>
+</html>
+	
